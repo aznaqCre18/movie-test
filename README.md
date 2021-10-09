@@ -21,3 +21,7 @@ Setelah semua proses terinstal dengan baik, lanjut merun project ini dengan comm
 `npm start`
 
 project akan berjalan di lokal, untuk membukanya anda bisa membuka lewat browser [http://localhost:3000](http://localhost:3000)
+
+
+### Atau bisa di akses dilink dibawah
+[https://movie-test-loyalto.vercel.app/](https://movie-test-loyalto.vercel.app/)
