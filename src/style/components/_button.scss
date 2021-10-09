@@ -1,0 +1,25 @@
+.btn-cmp {
+  background-color: $btnPrimary;
+  width: 200px;
+  height: 48px;
+  padding: 12px 18px;
+  border-radius: 20px;
+  border: none;
+  color: $white;
+  transition: .2s ease-in-out;
+
+  &.transparent {
+    background-color: transparent;
+    border: none;
+    color: $primary;
+    width: 100px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: .7;
+  }
+}

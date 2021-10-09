@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+//color
+$primary: #0C145A;
+$secondary: #7E8CAC;
+$btnPrimary: #4D17E2;
+$white: #FFF;
+
+//pages
+@import './pages/landing-page';
+@import './pages/list-movie-page';
+@import './pages/detail-movie-page';
+@import './pages/genre-page';
+
+//components
+@import './components/header';
+@import './components/button';
+@import './components/movie-list';

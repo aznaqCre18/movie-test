@@ -1,0 +1,27 @@
+.landing-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+
+  .left-side {
+    .title {
+      margin-bottom: 20px;
+
+      p {
+        color: $secondary;
+        font-size: 18px;
+      }
+
+      h1 {
+        color: $primary;
+        font-size: 42px;
+      }
+    }
+
+    .desc {
+      color: $primary;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.header-container {
+  width: 100vw;
+  height: 80px;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 999;
+
+  .list-menu {
+    ul {
+      display: flex;
+      margin-left: 32px;
+
+      li {
+        list-style-type: none;
+        margin-left: 32px;
+        font-size: 14px;
+        transition: .2s ease;
+
+        a {
+          text-decoration: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

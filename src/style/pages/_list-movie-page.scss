@@ -1,0 +1,58 @@
+.list-movie-container {
+  padding: 80px 40px 40px 40px;
+
+  .title {
+    font-weight: 400;
+    color: $primary;
+    margin-bottom: 32px;
+  }
+
+  .wrapper-movie-list {
+    display: flex;
+    gap: 34px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+
+  .button-next-prev {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    .btn-paging {
+      padding: 4px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $btnPrimary;
+      border: none;
+      border-radius: 10px;
+      gap: 6px;
+      width: 100px;
+      height: 35px;
+      transition: .2s ease-in-out;
+
+      &.disable {
+        background-color: $secondary;
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
+
+      .label {
+        color: $white;
+      }
+    }
+
+    p {
+      color: $primary;
+      font-size: 14px;
+    }
+  }
+}
