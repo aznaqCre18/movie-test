@@ -4,8 +4,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
 import { StarIcon } from '../../configs/icons';
-import { BannerDummy, CoverImage } from '../../configs/images';
-import { IMG_BASE_URL, SERVICES } from '../../configs/services';
+import { IMG_BASE_URL } from '../../configs/services';
 import * as actionDetailMovie from './action';
 
 function DetailMoviePage() {

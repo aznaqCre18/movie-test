@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../../components/Header';
 import Button from '../../components/Button';
 import { BannerImage } from '../../configs/images';
-import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 
 function LandingPage() { 

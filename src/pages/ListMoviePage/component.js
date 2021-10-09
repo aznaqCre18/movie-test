@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MovieList from '../../components/MovieList/component';
 import Header from './../../components/Header';
-import { CoverImage } from '../../configs/images';
 import { useDispatch } from 'react-redux';
 import * as actionListMovie from './action';
 import { useSelector } from 'react-redux';
