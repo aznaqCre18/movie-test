@@ -1,21 +1,24 @@
-import { combineReducers, createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
+import rootReducer from "../reducer";
+import storage from "redux-persist/lib/storage";
+import { persistStore, persistReducer } from 'redux-persist';
 
-import GenreReducer from './../pages/GenrePage/reducer';
-import ListMovieReducer from './../pages/ListMoviePage/reducer';
-import DetailMovie from './../pages/DetailMoviePage/reducer';
+const persistConfig = {
+  key: 'root',
+  storage,
+}
 
-const rootReducer = combineReducers({
-  Genre: GenreReducer,
-  ListMovie: ListMovieReducer,
-  DetailMovie,
-});
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-const store = createStore(
-  rootReducer,
+let store = createStore(
+  persistedReducer,
   composeWithDevTools(applyMiddleware(logger, thunk))
 );
 
-export default store;
+let persistor = persistStore(store);
+
+
+export { persistor, store };

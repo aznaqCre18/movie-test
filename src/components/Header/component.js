@@ -24,6 +24,11 @@ function Header({loc}) {
                   <span>Movie List</span>
                 </Link>
               </li>
+              <li>
+                <Link to="/persist">
+                  <span>Persist</span>
+                </Link>
+              </li>
             </ul>
           </div>
         ) : null
