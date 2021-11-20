@@ -29,8 +29,8 @@ export default class PagePersist extends Component {
           {
             todo.length > 0 ? todo.map((item, idx) => {
               return (
-                <div style={{display: 'flex', marginBottom: 10}}>
-                  <li style={{width: 120}} key={idx} >{item}</li>
+                <div key={idx}  style={{display: 'flex', marginBottom: 10}}>
+                  <li style={{width: 120}} >{item}</li>
                   <button>delete</button>
                 </div>
               )

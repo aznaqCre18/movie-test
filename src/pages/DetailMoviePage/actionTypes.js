@@ -1,1 +1,0 @@
-export const GET_DETAIL_MOVIE = 'GET_DETAIL_MOVIE';
